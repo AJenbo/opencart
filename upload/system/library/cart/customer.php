@@ -7,19 +7,19 @@ namespace Opencart\System\Library\Cart;
  */
 class Customer {
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\DB Duck Typing
 	 */
 	private object $db;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Engine\Config Duck Typing
 	 */
 	private object $config;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Request Duck Typing
 	 */
-	private object $request; // Do not add namespace as it stops devs being able to extend classes
+	private object $request; // Do not add class type as it stops devs being able to swap implementations following Duck Typing
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Session Duck Typing
 	 */
 	private object $session;
 	/**

@@ -7,11 +7,11 @@ namespace Opencart\System\Library\Cart;
  */
 class Currency {
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\DB Duck Typing
 	 */
 	private object $db;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Language Duck Typing
 	 */
 	private object $language;
 	/**

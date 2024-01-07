@@ -14,7 +14,7 @@ namespace Opencart\System\Library;
  */
 class Session {
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Session\File Duck Typing
 	 */
 	protected object $adaptor;
 	/**

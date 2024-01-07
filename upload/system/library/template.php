@@ -14,7 +14,7 @@ namespace Opencart\System\Library;
  */
 class Template {
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Template\Template Duck Typing
 	 */
 	private object $adaptor;
 

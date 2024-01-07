@@ -14,7 +14,7 @@ namespace Opencart\System\Library;
  */
 class Cache {
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Cache\File Duck Typing
 	 */
 	private object $adaptor;
 

@@ -16,7 +16,7 @@ namespace Opencart\System\Library;
  */
 class DB {
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\DB\PDO Duck Typing
 	 */
 	private object $adaptor;
 

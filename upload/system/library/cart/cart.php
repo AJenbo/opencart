@@ -7,27 +7,27 @@ namespace Opencart\System\Library\Cart;
  */
 class Cart {
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\DB Duck Typing
 	 */
 	private object $db;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Engine\Config Duck Typing
 	 */
 	private object $config;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Cart\Customer Duck Typing
 	 */
 	private object $customer;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Session Duck Typing
 	 */
 	private object $session;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Cart\Tax Duck Typing
 	 */
 	private object $tax;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Cart\Weight Duck Typing
 	 */
 	private object $weight;
 	/**

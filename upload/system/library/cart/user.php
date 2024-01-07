@@ -7,15 +7,15 @@ namespace Opencart\System\Library\Cart;
  */
 class User {
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\DB Duck Typing
 	 */
 	private object $db;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Request Duck Typing
 	 */
 	private object $request;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\Session Duck Typing
 	 */
 	private object $session;
 	/**

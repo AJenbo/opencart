@@ -7,11 +7,11 @@ namespace Opencart\System\Library\Cart;
  */
 class Weight {
 	/**
-	 * @var object
+	 * @var \Opencart\System\Library\DB Duck Typing
 	 */
 	private object $db;
 	/**
-	 * @var object
+	 * @var \Opencart\System\Engine\Config Duck Typing
 	 */
 	private object $config;
 	/**

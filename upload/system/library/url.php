@@ -19,7 +19,7 @@ class Url {
 	 */
 	private string $url;
 	/**
-	 * @var array
+	 * @var array<int, \Opencart\Catalog\Controller\Startup\SeoUrl> Duck Typing
 	 */
 	private array $rewrite = [];
 
@@ -37,7 +37,7 @@ class Url {
 	 *
 	 * Add a rewrite method to the URL system
 	 *
-	 * @param \Opencart\System\Engine\Controller $rewrite
+	 * @param \Opencart\Catalog\Controller\Startup\SeoUrl $rewrite Duck Typing
 	 *
 	 * @return void
 	 */

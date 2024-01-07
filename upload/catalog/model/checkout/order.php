@@ -432,6 +432,7 @@ class Order extends \Opencart\System\Engine\Model {
 					if ($this->config->get('fraud_' . $extension['code'] . '_status')) {
 						$this->load->model('extension/' . $extension['extension'] . '/fraud/' . $extension['code']);
 
+						/** @var \Opencart\Catalog\Model\Extension\Opencart\Fraud\Ip Duck Type */
 						$model_extension_fraud = ($this->{'model_extension_' . $extension['extension'] . '_fraud_' . $extension['code']}) ?? null;
 
 						if ($model_extension_fraud && isset($model_extension_fraud->check)) {
@@ -457,6 +458,7 @@ class Order extends \Opencart\System\Engine\Model {
 				foreach ($order_totals as $order_total) {
 					$this->load->model('extension/' . $order_total['extension'] . '/total/' . $order_total['code']);
 
+					/** @var \Opencart\Catalog\Model\Extension\Opencart\Total\Voucher Duck Type */
 					$model_extension_total = $this->{'model_extension_' . $order_total['extension'] . '_total_' . $order_total['code']} ?? null;
 
 					if ($model_extension_total && isset($model_extension_total->confirm)) {
@@ -559,6 +561,7 @@ class Order extends \Opencart\System\Engine\Model {
 				foreach ($order_totals as $order_total) {
 					$this->load->model('extension/' . $order_total['extension'] . '/total/' . $order_total['code']);
 
+					/** @var \Opencart\Catalog\Model\Extension\Opencart\Total\Voucher Duck Type */
 					$model_extension_total = $this->{'model_extension_' . $order_total['extension'] . '_total_' . $order_total['code']} ?? null;
 
 					if ($model_extension_total && isset($model_extension_total->unconfirm)) {
