@@ -677,7 +677,7 @@ class Modification extends \Opencart\System\Engine\Controller {
 		if (!$json) {
 			$this->load->model('setting/modification');
 
-			$this->model_setting_modification->editStatus($modification_id, 1);
+			$this->model_setting_modification->editStatus($modification_id, true);
 
 			$json['success'] = $this->language->get('text_success');
 		}
@@ -709,7 +709,7 @@ class Modification extends \Opencart\System\Engine\Controller {
 		if (!$json) {
 			$this->load->model('setting/modification');
 
-			$this->model_setting_modification->editStatus($modification_id, 0);
+			$this->model_setting_modification->editStatus($modification_id, false);
 
 			$json['success'] = $this->language->get('text_success');
 		}

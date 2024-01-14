@@ -70,7 +70,7 @@ class Opayo extends \Opencart\System\Engine\Controller {
 		$data['sort_order'] = $this->config->get('payment_opayo_sort_order');
 
 		if (!$data['setting']['cron']['token']) {
-			$data['setting']['cron']['token'] = sha1(uniqid(mt_rand(), 1));
+			$data['setting']['cron']['token'] = sha1(uniqid(mt_rand(), true));
 		}
 
 		if (!$data['setting']['cron']['url']) {
