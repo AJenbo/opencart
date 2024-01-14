@@ -14,7 +14,6 @@ parameters:
     ignoreErrors:
         - '#^Access to an undefined property Opencart\\System\\Engine\\Proxy<Opencart\\Catalog\\Model\\Checkout\\Cart>::\$getTotals\.$#'
         - '# always exists and is not #'
-        - '#^Call to an undefined method object::[a-zA-Z]+\(\)\.$#'
         - '#^Constant [A-Z_]+ not found\.$#'
         - '#^Empty array passed to foreach\.$#'
         - '# is always false\.$#'
