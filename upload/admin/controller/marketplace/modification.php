@@ -589,7 +589,7 @@ class Modification extends \Opencart\System\Engine\Controller {
 		$file = DIR_LOGS . 'ocmod.log';
 
 		if (is_file($file)) {
-			return htmlentities(file_get_contents($file, FILE_USE_INCLUDE_PATH, null));
+			return htmlentities(file_get_contents($file, true, null));
 		} else {
 			return '';
 		}
